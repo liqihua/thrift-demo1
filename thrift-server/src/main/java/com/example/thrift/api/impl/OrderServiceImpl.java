@@ -15,6 +15,7 @@ import java.util.List;
  */
 public class OrderServiceImpl implements OrderService.Iface{
 
+    @Override
     public List<OrderVO> listOrder(ListOrderParam param) throws TException {
         List<OrderVO> voList = new LinkedList<OrderVO>();
         for(int i = 0; i < param.page * param.pageSize; i++) {
